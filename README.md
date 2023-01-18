@@ -62,5 +62,7 @@ b.
  e.
    Ingress est un objet qui sert de fichier de configuration des regles d'accès d'un conteneur kubernetes.
    <fichier>
+   Puis on applique le changement 
+   minikube kubectl -- apply
 
 
