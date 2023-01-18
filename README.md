@@ -42,6 +42,7 @@ a.
   Création du pod phpmyadmin:
   minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/phpmyadmin-pod.yaml
 
+b.
   Création du service mysql:
   minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/mysql-service.yaml
 
