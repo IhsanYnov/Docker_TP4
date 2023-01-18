@@ -33,3 +33,18 @@ Introduction à Kubernetes
      
    b.Redirection vers le port 80 
          > minikube kubectl -- port-forward pods/webserver 80:80
+         
+3.
+a.
+  Création du pod MYSQL
+  minikube kubectl -- create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/mysql-pod.yaml
+
+  Création du pod phpmyadmin:
+  minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/phpmyadmin-pod.yaml
+
+  Création du service mysql:
+  minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/mysql-service.yaml
+
+  Création du service phpmyadmin:
+  minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/phpmyadmin-service.yaml
+
