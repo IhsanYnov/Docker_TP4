@@ -55,4 +55,12 @@ b.
 
   On récupère l'adresse de phpmyadmin
   minikube service phpmyadmin
+   
+ d.
+   On redirige les requêtes entrantes sur un port local vers un port sur le pod dans le cluster Kubernetes
+   minikube kubectl -- port-forward phpmyadmin 8080:80
+ e.
+   Ingress est un objet qui sert de fichier de configuration des regles d'accès d'un conteneur kubernetes.
+   <fichier>
+
 
