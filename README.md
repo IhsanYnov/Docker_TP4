@@ -48,4 +48,11 @@ b.
 
   Création du service phpmyadmin:
   minikube kubectl --  create -f https://raw.githubusercontent.com/kubernetes/examples/master/mysql/phpmyadmin-service.yaml
+ 
+ c.
+  Création de la connexion entre phpmyadmin et mysql service :
+  minikube kubectl -- set env pods <phpmyadmin-pod-name> MYSQL_ROOT_PASSWORD=<your-password>
+
+  On récupère l'adresse de phpmyadmin
+  minikube service phpmyadmin
 
